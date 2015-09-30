@@ -1,0 +1,17 @@
+ZeroNet
+
+Decentralized P2P websites using Bitcoin crypto
+and the BitTorrent network
+
+ZeroNet uses Bitcoin cryptography and BitTorrent technology to build a decentralized censorship-resistant network. Users can publish static or dynamic websites into ZeroNet and visitors can choose to also serve the website. Websites will remain on-line even if it is being served by only 1 peer.  When a site is updated by its owner, all nodes serving that site (previous visitors) will receive only the incremental updates done to the site content. ZeroNet counts with a build-in SQL database. This makes content-heavy site development easy. The DB is also synced with hosting nodes with incremental updates.
+
+Usage:
+Host site without central server (peers)
+
+https://n0where.net/decentralized-p2p-websites/
+https://github.com/HelloZeroNet/
+http://zeronet.io/
+https://docs.google.com/presentation/d/1_2qK1IuOKJ51pgBvllZ9Yu7Au2l551t3XBgyTSvilew/pub?start=false&loop=false&delayms=3000#slide=id.g9a1cce9ee_0_4
+
+
+

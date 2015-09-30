@@ -1,0 +1,45 @@
+Man-In-The-Middle Attack Framework: MITMf
+
+MITMf aims to provide a one-stop-shop for Man-In-The-Middle and network attacks while updating and improving existing attacks and techniques. Originally built to address the significant shortcomings of other tools (e.g Ettercap, Mallory), it’s been almost completely re-written from scratch to provide a modular and easily extendible framework that anyone can use to implement their own MITM attack.
+
+https://n0where.net/mitmf/
+
+apt-get install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev libcapstone3 libcapstone-dev
+pip install virtualenvwrapper
+source /usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
+mkvirtualenv MITMf -p /usr/bin/python2.7
+git clone https://github.com/byt3bl33d3r/MITMf
+cd MITMf && git submodule init && git submodule update --recursive
+pip install -r requirements.txt
+python mitmf.py --help
+
+------------------------------------------------------------------------------------------------------------------
+Bettercap
+
+bettercap is a complete, modular, portable and easily extensible MITM tool and framework with every kind of diagnostic and offensive feature you could need in order to perform a man in the middle attack.
+Motivation
+
+Does a complete, modular, portable and easy to extend MITM tool actually exist?
+
+If your answer is “ettercap”, let me tell you something:
+
+    ettercap was a great tool, but it made its time.
+    ettercap filters do not work most of the times, are outdated and hard to implement due to the specific language they’re implemented in.
+    ettercap is freaking unstable on big networks … try to launch the host discovery on a bigger network rather than the usual /24
+    yeah you can see connections and raw pcap stuff, nice toy, but as a professional researcher you want to see only relevant stuff.
+    unless you’re a C/C++ developer, you can’t easily extend ettercap or make your own module.
+
+ 
+
+Indeed you could use more than just one tool … maybe arpspoof to perform the actual poisoning, mitmproxy to intercept HTTP stuff and inject your payloads and so forth … I don’t know about you, but I hate when I need to use a dozen of tools just to perform one single attack, especially when I need to do some black magic in order to make all of them work on my distro or on OSX … what about the KISS principle?
+
+So bettercap was born …
+
+https://github.com/evilsocket/bettercap
+
+-------------------------------------------------------------------------------------------------------------------
+MITM PE file infector: PEInjector
+https://n0where.net/mitm-pe-file-infector-peinjector/
+
+---------------------------------------------------------------------------------------------------------------

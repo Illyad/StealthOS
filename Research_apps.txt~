@@ -1,0 +1,207 @@
+Automatically install all Kali linux tools: katoolin
+
+https://github.com/LionSec/katoolin
+
+-------------------------------------------------------------------------------------------------------------------
+
+Mobile Security Framework: MobSF
+
+
+Gmail Command and Control Server: GCaT
+https://github.com/byt3bl33d3r/gcat
+
+Automated Evil Twin Attack: infernal-twin
+https://github.com/entropy1337/infernal-twin.git
+Contact: 3ntr0py1337@gmail.com
+
+uses:
+-- Aircrack
+-- SSL Strip
+
+	What this tool will do ?
+
+	    Set up monitoring interface	
+	    Set up DB
+	    Scan wireless network in the range
+	    Connect to the network selected SSID
+	    Obtain login page of authentication
+	    Modify the login page with attacker controlled php script to obtain the credentials
+ 	    Set up Apache Server and serve fake login page
+	    Give a victim an IP
+	    Set up NAT table
+	    Dump the traffic
+
+
+BurpKit
+
+
+https://github.com/allfro/BurpKit
+
+802.11 Massive Monitoring: WiWo
+wiwo is a distributed 802.11 monitoring and injecting system that was designed to be simple and scalable, in which all workers (nodes) can be managed by a Python framework.
+
+https://n0where.net/802-11-massive-monitoring-wiwo/
+https://github.com/CoreSecurity/wiwo
+
+-------------------------------------------------------------------------------------------------------------------
+
+Rogue Wi-Fi Access Point: 3vilTwinAttacker
+3vilTwinAttacker is security tool that provide the Rogue access point to Man-In-The-Middle and network attacks. purporting to provide wireless Internet services, but snooping on the traffic. can be used to capture of credentials of unsuspecting users by either snooping the communication by phishing.
+
+https://github.com/P0cL4bs/3vilTwinAttacker
+
+-------------------------------------------------------------------------------------------------------------------
+Facebrute V 1.0
+
+zetcode.com
+https://github.com/P0cL4bs/Facebrute
+
+Bruteforce FB
+
+------------------------------------------------------------------------------------------------------------------
+
+--> https://github.com/P0cL4bs/ <-- bekijken!!
+
+------------------------------------------------------------------------------------------------------------------
+
+Man-In-The-Middle Attack Framework: MITMf
+
+MITMf aims to provide a one-stop-shop for Man-In-The-Middle and network attacks while updating and improving existing attacks and techniques. Originally built to address the significant shortcomings of other tools (e.g Ettercap, Mallory), it’s been almost completely re-written from scratch to provide a modular and easily extendible framework that anyone can use to implement their own MITM attack.
+
+https://n0where.net/mitmf/
+
+apt-get install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev libcapstone3 libcapstone-dev
+pip install virtualenvwrapper
+source /usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
+mkvirtualenv MITMf -p /usr/bin/python2.7
+git clone https://github.com/byt3bl33d3r/MITMf
+cd MITMf && git submodule init && git submodule update --recursive
+pip install -r requirements.txt
+python mitmf.py --help
+
+------------------------------------------------------------------------------------------------------------------
+Fast Parallel Login Brute-forcer: Medusa
+THC-hydra but better
+
+https://github.com/jmk-foofus/medusa/releases
+
+------------------------------------------------------------------------------------------------------------------
+
+Phishing Campaign Toolkit: King Phisher
+
+King Phisher is a tool for testing and promoting user awareness by simulating real world phishing attacks. It features an easy to use, yet very flexible architecture allowing full control over both emails and server content. King Phisher can be used to run campaigns ranging from simple awareness training to more complicated scenarios in which user aware content is served for harvesting credentials.
+
+ 
+King Phisher is only to be used for legal applications when the explicit permission of the targeted organization has been obtained.
+
+https://github.com/securestate/king-phisher/releases
+
+-------------------------------------------------------------------------------------------------------------------
+Distributed Password Cracking: CrackLord
+
+https://n0where.net/distributed-password-cracking-cracklord/
+
+-------------------------------------------------------------------------------------------------------------------
+
+Vulnerability Assessment Penetration Testing: VAPT
+The set of scripts included in this package will create a Kali/SamuraiWTF type environment for the performing of Vulnerability Assessments and Penetration Testing.
+
+The goal of this project was to allow a portable set of tools to be installed onto an Ubuntu or Raspbian system, allowing the tester to be free of distribution release specific constraints.
+
+These scripts were designed specifically for Ubuntu 14.04 LTS and Raspbian.
+
+https://github.com/sec0ps/va-pt
+https://n0where.net/vulnerability-assessment-penetration-testing-vapt/
+
+-------------------------------------------------------------------------------------------------------------------
+
+Linux Memory Extractor: LiME
+LiME (formerly DMD) is A Loadable Kernel Module (LKM) which allows for volatile memory acquisition from Linux and Linux-based devices, such as Android. This makes LiME unique as it is the first tool that allows for full memory captures on Android devices. It also minimizes its interaction between user and kernel space processes during acquisition, which allows it to produce memory captures that are more forensically sound than those of other tools designed for Linux memory acquisition.
+
+https://n0where.net/linux-memory-extractor-lime/
+https://github.com/504ensicslabs/lime
+
+-------------------------------------------------------------------------------------------------------------------
+Bettercap
+
+bettercap is a complete, modular, portable and easily extensible MITM tool and framework with every kind of diagnostic and offensive feature you could need in order to perform a man in the middle attack.
+Motivation
+
+Does a complete, modular, portable and easy to extend MITM tool actually exist?
+
+If your answer is “ettercap”, let me tell you something:
+
+    ettercap was a great tool, but it made its time.
+    ettercap filters do not work most of the times, are outdated and hard to implement due to the specific language they’re implemented in.
+    ettercap is freaking unstable on big networks … try to launch the host discovery on a bigger network rather than the usual /24
+    yeah you can see connections and raw pcap stuff, nice toy, but as a professional researcher you want to see only relevant stuff.
+    unless you’re a C/C++ developer, you can’t easily extend ettercap or make your own module.
+
+ 
+
+Indeed you could use more than just one tool … maybe arpspoof to perform the actual poisoning, mitmproxy to intercept HTTP stuff and inject your payloads and so forth … I don’t know about you, but I hate when I need to use a dozen of tools just to perform one single attack, especially when I need to do some black magic in order to make all of them work on my distro or on OSX … what about the KISS principle?
+
+So bettercap was born …
+
+https://github.com/evilsocket/bettercap
+
+-------------------------------------------------------------------------------------------------------------------
+The Social-Engineer Toolkit (SET)
+
+https://github.com/trustedsec/social-engineer-toolkit/
+
+-------------------------------------------------------------------------------------------------------------------
+Python Network Recon Framework: ivre
+
+https://n0where.net/python-network-recon-framework-ivre/
+https://github.com/cea-sec/ivre
+
+------------------------------------------------------------------------------------------------------------------
+Opensource RAT: Pupy
+Pupy is a remote administration tool with an embeded Python interpreter, allowing its modules to load python packages from memory and transparently access remote python objects. The payload is a reflective DLL and leaves no trace on disk
+
+https://github.com/n1nj4sec/pupy
+
+-----------------------------------------------------------------------------------------------------------------
+Online Automated Tasks: Huginn
+Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn’s Agents create and consume events, propagating them along a directed graph. Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server. You always know who has your data. You do.
+
+https://n0where.net/online-automated-tasks-huginn/
+
+-----------------------------------------------------------------------------------------------------------------
+sshynq
+Auto-sync files or directories over SSH using fs.watch(). Generates SSH private/public keys with ssh-keygen and transfers the public one to ~/.ssh/authorized_keys on remote host, to avoid having to re-type password all the time.
+
+Utilizes simple caching to avoid unnecessary file transfers and to continuously show size difference.
+
+Ignore paths by adding them, one per line, to a file named .sshyncignore in the root source folder.
+
+https://github.com/mateogianolio/sshync
+
+---------------------------------------------------------------------------------------------------------------
+DHCP exhaustion attack: DHCPig
+https://n0where.net/dhcp-exhaustion-attack-dhcpig/
+
+---------------------------------------------------------------------------------------------------------------
+Exploit Search: XPL-Search
+https://n0where.net/exploit-search-xpl-search/
+
+----------------------------------------------------------------------------------------------------------------
+Automate Vulnerability Scanning: Seccubus
+https://github.com/schubergphilis/Seccubus_v2/releases
+
+----------------------------------------------------------------------------------------------------------------
+Free Cross Platform Information Sharing: DemonSaw
+https://www.demonsaw.com/download.php
+
+----------------------------------------------------------------------------------------------------------------
+MITM PE file infector: PEInjector
+https://n0where.net/mitm-pe-file-infector-peinjector/
+
+---------------------------------------------------------------------------------------------------------------
+Pentesting Active Directory Environments: CrackMapExec
+https://n0where.net/pentesting-active-directory/
+
+---------------------------------------------------------------------------------------------------------------
+https://github.com/chokepoint/crunchpwn
